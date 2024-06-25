@@ -6,5 +6,15 @@ var k = 4.3f;
 
 
 @main def main2(): Unit = {
-    println(s"-2 * (g - k) + c = ${-2 * (g-k) + c}");
+    b -= 1;
+    println(s"--b * a + c * d -- = ${b*a + c*d}");
+    d -= 1;
+    a += 1;
+    println(s"a++ = ${a}");
+    println(s"-2 * (g - k) + c = ${-2 * (a-k) + c}");  //g is not defined
+    println(s"c=c++ = ${c}");
+    c += 1;
+    c += 1;
+    println(s"c=++c*a++ = ${c*a}");
+    a += 1;
 }
