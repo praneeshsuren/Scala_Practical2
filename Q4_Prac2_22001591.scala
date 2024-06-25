@@ -1,6 +1,6 @@
 def attendees (ticket_price: Int): Int= 120 + (15 - ticket_price) / 5 * 20;
 def revenue (ticket_price: Int): Int = attendees (ticket_price) * ticket_price;
-def cost (ticket_price: Int): Int = 500 + attendees(ticket_price);
+def cost (ticket_price: Int): Int = 500 + attendees(ticket_price)*3;
 def profit (ticket_price: Int): Int = revenue(ticket_price) - cost(ticket_price);
 
 @main def main4(): Unit = {
